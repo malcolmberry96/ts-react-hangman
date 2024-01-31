@@ -57,7 +57,7 @@ useEffect(() => {
       <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess}/>
       <div style={{ alignSelf: "stretch" }}>
         <Keyboard 
-          activeLetter={guessedLetters.filter(letter => 
+          activeLetters={guessedLetters.filter(letter => 
           wordToGuess.includes(letter)
           )}
           inactiveLetters={incorrectLetters}
