@@ -58,6 +58,7 @@ export function Keyboard({
                         ${
                             isInactive ? styles.inactive : "" 
                         }`}
+                        disabled={isInactive || isActive}
                         key={key}
                     >
                         {key}
