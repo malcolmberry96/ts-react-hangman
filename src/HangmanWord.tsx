@@ -3,7 +3,7 @@ type HangmmanWordProps = {
     wordToGuess: string
 }
 
-export function HangmanWord({ guessedLetters, wordToGuess}: HangmmanWordProps) {
+export function HangmanWord( {guessedLetters, wordToGuess}: HangmmanWordProps ){
 
 
     return <div style={{ 
@@ -16,7 +16,7 @@ export function HangmanWord({ guessedLetters, wordToGuess}: HangmmanWordProps) {
             }}
             >
                 {wordToGuess.split("").map((letter, index) => (
-                    <span style={{ borderBottom: ".1em solid black"}} key={index}>
+                    <span style={{ borderBottom: ".1em solid black" }} key={index}>
                        <span style={{
                             visibility: guessedLetters.includes(letter) 
                             ? "visible" 
